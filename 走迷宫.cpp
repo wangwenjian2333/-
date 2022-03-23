@@ -37,25 +37,25 @@ int main()
 		system("cls");
 		print_map();
 		show_cursor(curX,curY);
-		char t=getch();//ÏòÉÏ×ß
+		char t=getch();//å‘ä¸Šèµ°
 			if(t=='w')
 			{
 	    if((curY-1)>=0 && (map[curY-1][curX]=='*' || map[curY-1][curX]=='E'))
 			curY--;
 			}
-		else if(t=='s')//ÏòÏÂ×ß
+		else if(t=='s')//å‘ä¸‹èµ°
 			{
                                                         
 		if((curY+1)<ROW && (map[curY+1][curX]=='*' || map[curY+1][curX]=='E'))
 					curY++;
 			}
-		else if(t=='a')//Ïò×ó×ß
+		else if(t=='a')//å‘å·¦èµ°
 			{
 			
         if((curX-1)>=0 && (map[curY][curX+1]=='*' || map[curY][curX-1]=='E'))
 			curX--;
 			}
-	    else if(t=='d')//ÏòÓÒ×ß
+	    else if(t=='d')//å‘å³èµ°
 			{
 				
 		if((curX+1)<COL && (map[curY][curX+1]=='*' || map[curY][curX+1]=='E')) 
@@ -63,7 +63,7 @@ int main()
 			}
 		if(map[curY][curX]=='E')
 			{
-			    printf("ÎÔ²Û£¬CÓïÑÔ´óÀĞ");
+			    printf("å§æ§½ï¼ŒCè¯­è¨€å¤§ä½¬");
                 break;
 			}
 }
